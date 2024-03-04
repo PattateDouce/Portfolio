@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio - Rémy Guibert</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rémy Guibert</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Accueil</a></li>
+          <li><a href="#about">À propos de moi</a></li>
+          <li><a href="#experience">Expériences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Me contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Rémy Guibert</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Accueil</a></li>
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expériences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Me contacter</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./media/profil.jpg" alt="Ma photo de profil" style="border-radius: 25%;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Rémy Guibert</h1>
+        <p class="section__text__p2">Développeur d'applications & sites web</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./media/Rémy Guibert CV.pdf')"
+          >
+            Télécharger mon CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./media/email.png"
+            alt="Mon adress email"
+            class="icon"
+            onclick="location.href='mailto:remy.guibert@etu.univ-tlse2.fr'"
+          />
+          <img
+            src="./media/linkedin.png"
+            alt="Mon profil LinkedIn"
+            class="icon"
+            onclick="window.open('https://fr.linkedin.com/in/remy-guibert-62a636252')"
+          />
+          <img
+            src="./media/github.png"
+            alt="Mon profil GitHub"
+            class="icon"
+            onclick="window.open('https://github.com/PattateDouce')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              <strong>Qui suis-je ?</strong>
+              Je m'appelle Rémy Guibert et j'ai 21 ans. Actuellement en 3e année de BUT Informatique à
+              l'IUT de Blagnac, j'ai décidé de suivre le parcours <strong>Réalisation d'applications</strong>.
+              Lorsque j'aurai obtenu mon diplôme, je compte me diriger vers un Master (SDL ou ICE) ou une licence.
+              Dans la vie, je suis quelqu'un de curieux, créatif et rigoureux.
+              <br><br>
+              <strong>Mon parcours :</strong>
+              J’ai toujours été fasciné par le fonctionnement des choses,
+              m’intéressant aux divers processus qui rendent un objet opérationnel,
+              qu'ils soient difficiles ou non, comprendre des systèmes me plaît beaucoup.
+              Durant mon stage d'observation de 3e, j'ai découvert l'informatique,
+              et depuis ce moment-là, j'ai décidé que ce serait ce que je ferai plus tard,
+              car cela me permet de faire des choses palpables immédiatement et utiles.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./media/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Baccalauréat</h3>
+              <p>Techonlogique<br>en<br>STI2D</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./media/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Diplôme</h3>
+              <p>BUT Info<br>Parcours A<br>(en cours)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./media/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>La suite</h3>
+              <p>Master SDL<br>ou<br>L3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h1 class="title">Expériences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Langages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./media/html5.png"
+                  alt="HTML 5 icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+                <img
+                  src="./media/css3.png"
+                  alt="CSS 3 icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./media/java.png"
+                  alt="Java icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./media/typescript.png"
+                  alt="TypeScript icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./media/sql.png"
+                  alt="SQL icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./media/php.png"
+                        alt="PHP icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./media/python.png"
+                        alt="Python icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./media/angular.png"
+                  alt="Angular icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./media/symfony.png"
+                  alt="Symfony icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Symfony</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./media/tux.png"
+                  alt="Symfony icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Compétences techniques</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>1. Réaliser un développement d'application</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>2. Optimiser des applications informatiques</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>3. Administrer des systèmes informatiques communicants</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>4. Gérer des données de l'information</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>5. Conduire un projet</h3>
+                </div>
+              </article>
+              <article>
+              <div>
+                <h3>6. Travailler dans une équipe informatique</h3>
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./media/blackjack.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BlackJack</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/intro-aux-ihm'"
+              >
+              <img
+                src="./media/github.png"
+                alt="GitHub"
+                height=15px
+              />
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/intro-aux-ihm/blob/main/Pr%C3%A9sentation%20Projet%202022.pdf'"
+              >
+                Sujet
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./media/classes-de-complexité.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Comparaison d'approche algorithmique</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/SAE-S2-02-Algo'"
+              >
+              <img
+                src="./media/github.png"
+                alt="GitHub"
+                height=15px
+              />
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/SAE-S2-02-Algo/blob/main/README.adoc'"
+              >
+                Sujet
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./media/project-3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Application de conversion de factures</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/backup-iut-blagnac/tree/main/S4/Stage%20LP%20Promotion/Factur-X/applications'"
+              >
+              <img
+                src="./media/github.png"
+                alt="GitHub"
+                height=15px
+              />
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/backup-iut-blagnac/blob/main/S4/Stage%20LP%20Promotion/Factur-X/compte%20rendus/Soutenance%20de%20stage.odp'"
+              >
+                Présentation
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./media/iot-parkings.png"
+                      alt="Project 3"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projet IoT</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/backup-iut-blagnac/tree/main/S5/Ressources/R5.AL.18%20-%20Internet%20des%20objets/Projet%20d%C3%A9but%20ann%C3%A9e'"
+              >
+              <img
+                src="./media/github.png"
+                alt="GitHub"
+                height=15px
+              />
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/backup-iut-blagnac/blob/main/S5/Ressources/R5.AL.18%20-%20Internet%20des%20objets/Projet%20d%C3%A9but%20ann%C3%A9e/Parc%20de%20stationnement%20de%20Toulouse.pdf'"
+              >
+                Compte rendu
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./media/slave_narratives.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Site web Slaves Narratives</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PattateDouce/SAE-S5-Slave-Narratives'"
+              >
+              <img
+                src="./media/github.png"
+                alt="GitHub"
+                height=15px
+              />
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contactez-moi !</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./media/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:remy.guibert@etu.univ-tlse2.fr">remy.guibert@etu.univ-tlse2.fr</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./media/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://fr.linkedin.com/in/remy-guibert-62a636252"
+            target="_blank" rel="noopener noreferrer"
+            >LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./media/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/PattateDouce/"
+            target="_blank" rel="noopener noreferrer"
+            >GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <img
+      id="back-to-top"
+      src="./media/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#profile'"
+      style="position: relative; left: 95vw; top: 10vh"
+    />
+
+    <footer>
+    </footer>
+  </body>
+</html>
